@@ -122,7 +122,7 @@ public class EasyEmptyPlugin extends Plugin
 
 				
 				if (widget != null && (entryType == MenuAction.CC_OP_LOW_PRIORITY || entryType == MenuAction.CC_OP) &&
-					((hideDeposit && entryOption.startsWith("Empty|Deposit-1") && ArrayUtils.contains(pouches, widget.getItemId())) || 
+					((hideDeposit && entryOption.startsWith("Empty") && ArrayUtils.contains(pouches, widget.getItemId())) || 
 					(bankFill && entryOption.startsWith("Fill") && ArrayUtils.contains(pouches, widget.getItemId())) ||
 					(swapStam && entryOption.matches("Drink|Withdraw-1") && widget.getItemId() == ItemID.STAMINA_POTION1) ||
 					(swapNeck && entryOption.matches("Wear|Withdraw-1") && widget.getItemId() == ItemID.BINDING_NECKLACE))) {
